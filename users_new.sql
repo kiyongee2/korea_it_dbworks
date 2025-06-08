@@ -13,6 +13,10 @@ VALUES ('today', 't1357!!@', '이정후', 26);
 
 SELECT * FROM users;
 
+-- 이정후를 이종범으로 변경하고 나이를 50세로 변경
+UPDATE users SET username = '이종범', userage = 50 
+WHERE userid = 'today';
+
 COMMIT; -- 트랜잭션 수행(커밋 완료)
 
 
